@@ -1,0 +1,1 @@
+console.log("A\nB\nC\nD\nE");
