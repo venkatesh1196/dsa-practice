@@ -1,0 +1,9 @@
+let fs = require('fs');
+let input = fs.readFileSync(0, 'utf8').trim().split(/\s+/);
+let N = BigInt(input[0]);
+let M = BigInt(input[1]);
+console.log(`${N} + ${M} = ${N + M}\n`);
+console.log(`${N} - ${M} = ${N - M}\n`);
+console.log(`${N} * ${M} = ${N * M}\n`);
+console.log(`${N} / ${M} = ${N / M}\n`); //BigInt do floor division
+console.log(`${N} % ${M} = ${N % M}`);
