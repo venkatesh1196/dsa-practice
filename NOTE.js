@@ -16,3 +16,7 @@ input: 010 "BigInt(010)->10n" BigInt removes leading 0's
 //* note3: ending 0's
 result += N % 10; // this will keep ending zeros (result = ""; // but "" is not a good practice)
 result = (result * 10) + (N % 10); // this will remove ending zeros 
+
+//* note4: ASCII
+String.fromCharCode(input); // number to alphabet
+input.charCodeAt(0); // alphabet to number 
